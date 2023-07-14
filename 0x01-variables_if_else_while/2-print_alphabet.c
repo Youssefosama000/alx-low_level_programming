@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: print the alphabet in lowercase
+ * Description: a c program
  *
  * Return: always 0 (Success)
 **/
@@ -12,7 +12,7 @@ int main(void)
 {
 	char x = 'a';
 
-	while (x <= z)
+	while (x <= 'z')
 	{
 		putchar(x);
 		x++;
