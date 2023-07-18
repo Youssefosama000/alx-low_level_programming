@@ -5,16 +5,16 @@
  *
  * Description: a c program
  *
- * Return: always 0
+ * Return: o success
 **/
 
 int main(void)
 {
-	char str[] = "_putchar";
-	int ch;
-	for (ch = 0; ch < 8; ch++)
-		_putchar(str[ch]);
-	_putchar('\n');
+	str[] = "_putchar";
+	int i;
 
+	for (i = 0 ; i <= 8 ; i++)
+		_putchar(str[i]);
+	_putchar('/n');
 	return (0);
 }
