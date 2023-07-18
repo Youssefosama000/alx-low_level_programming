@@ -1,46 +1,21 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * print_to_98 - print all numbers from n to 98
- *
- * @n: the number to start printing from
- *
- * Return: always void
- */
-
+ * print_to_98 - print n to 98 counts
+ * separated by comma, follwed
+ * by space and number should be
+ * printed in order
+ * @n: input
+**/
 void print_to_98(int n)
 {
-	if (n <= 98)
-	{
-		for (; n <= 98 ; n++)
-		{
-			if (n == 98)
-			{
-				printf("%d", n);
-				printf("\n");
-				break;
-			}
-			else
-			{
-				printf("%d", n);
-			}
-		}
-	}
+	int count;
+
+	if (n > 98)
+		for (count = n; count > 98; count--)
+			printf("%d, ", count);
 	else
-	{
-		for (; n >= 98 ; n--)
-		{
-			if (n == 98)
-			{
-				printf("%d", n);
-				printf("\n");
-				break;
-			}
-			else
-			{
-				printf("%d", n);
-			}
-		}
-	}
+		for (count = n; count < 98; count++)
+			printf("%d, ", count);
+	printf("98\n");
 }
