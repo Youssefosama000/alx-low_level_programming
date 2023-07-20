@@ -3,9 +3,8 @@
 
 /**
  * main - print numbers
- *
  * Return: always 0 (Success)
-**/
+*/
 
 int main(void)
 {
