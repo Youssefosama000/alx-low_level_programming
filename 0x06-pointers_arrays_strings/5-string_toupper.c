@@ -1,29 +1,19 @@
 #include "main.h"
 
-/***/
+/**
+ * string_toupper - to change lower case
+ * @str: the string
+ * Return: the string
+**/
 
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
-	int index = 0;
+	int x = 0;
 
-	while (str[index])
+	while (str[x])
 	{
-		while (!(str[index] >= 'a' && str [index] <= 'z'))
-			if (str[index - 1] == ' ' ||
-				str[index - 1] == '\t' ||
-				str[index - 1] == '\n' ||
-				str[index - 1] == ',' ||
-				str[index - 1] == ';' ||
-				str[index - 1] == '.' ||
-				str[index - 1] == '!' ||
-				str[index - 1] == '?' ||
-				str[index - 1] == '"' ||
-				str[index - 1] == '(' ||
-				str[index - 1] == ')' ||
-				str[index - 1] == '{' ||
-				str[index - 1] == '}' ||
-				index == 0)
-				str[index] -= 32;
-			index ++;
+		if (str[x] >= 'a' && str[x] <= 'z')
+			x++;
 	}
+	return (str);
 }
