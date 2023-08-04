@@ -7,7 +7,7 @@
  * Return: 0
 **/
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 	int x = 0, y = 0;
 
